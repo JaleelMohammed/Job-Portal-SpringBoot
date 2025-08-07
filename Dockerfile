@@ -12,7 +12,7 @@ COPY src ./src
 
 # Use Maven to build the application and create the executable JAR file
 # '-Dmaven.test.skip=true' skips tests to speed up the build process
-RUN ./mvnw clean package -Dmaven.test.skip=true
+RUN mvn clean package -Dmaven.test.skip=true
 
 # Expose the port on which the Spring Boot application will run (e.g., 8080)
 EXPOSE 8080
@@ -34,10 +34,10 @@ COPY src ./src
 
 # Use Maven to build the application and create the executable JAR file
 # '-Dmaven.test.skip=true' skips tests to speed up the build process
-RUN ./mvnw clean package -Dmaven.test.skip=true
+RUN mvn clean package -Dmaven.test.skip=true
 
 # Expose the port on which the Spring Boot application will run (e.g., 8080)
-EXPOSE 8080
+EXPOSE 8082
 
 # Set the entry point to run the JAR file
 # Replace 'HireHub-SpringBoot-0.0.1-SNAPSHOT.jar' with your actual JAR file name
