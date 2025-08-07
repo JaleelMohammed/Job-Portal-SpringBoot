@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 //@RequestMapping("/api") 
-@CrossOrigin(origins = "http://localhost:5173") 
+@CrossOrigin(origins = "https://job-portal-dpz207igd-jaleelmohammeds-projects.vercel.app") 
 public class ProductControl { 
 	
 	

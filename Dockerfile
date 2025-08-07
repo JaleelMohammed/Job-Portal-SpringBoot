@@ -23,7 +23,7 @@ WORKDIR /app
 COPY --from=build /app/target/demos1-0.0.1-SNAPSHOT.jar demos1-0.0.1-SNAPSHOT.jar
 
 # Expose the port (must match server.port in application.properties)
-EXPOSE 8080
+EXPOSE 8082
 
 # Run the Spring Boot app
 ENTRYPOINT ["java", "-jar", "demos1-0.0.1-SNAPSHOT.jar"]
